@@ -9,9 +9,9 @@
   <link href="./themes/dark.css" rel="stylesheet" type="text/css" />
   <link href="./manti.css" rel="stylesheet" type="text/css" />
   <script src="big.js"></script>
-  <link rel="stylesheet" href="monokai.css">
-  <script src="highlight.pack.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+
+
+
 </head>
 
 <body>
@@ -44,28 +44,42 @@
   <div>
     <h2>Steps to awesome</h2>
     <ol>
-      <li>Prep</li>
-      <li>Plane</li>
-      <li>Camera</li>
-      <li>Sun</li> <!-- praise the sun reference to dark souls -->
-      <li>Final Adjustments</li>
-      <li>Thoughts, link to
+      <ol>Prep</ol>
+      <ol>Plane</ol>
+      <ol>Camera</ol>
+      <ol>Sun</ol> <!-- praise the sun reference to dark souls -->
+      <ol>Final Adjustments</ol>
+      <ol>Thoughts, link to
         <link rel="stylesheet" href="https://www.axismaps.com/blog/2018/05/relief-in-10-steps/"> axis maps</li>
-    </ol>
+      </ol>
+  </div>
+
+  <div>Prep
+    <ul>
+      <li>Data</li>
+      <li>QGIS/GDAL</li>
+      <li>Blender - duh!</li>
+    </ul>
   </div>
 
   <div>
-    <h2>Prep</h2>
+    <h1>Merge and/or Clip your dem/topo</h1>
+    <ul>
+      <pre><code>$ <b>gdalinfo</b> [input file]</code></pre>
+    </ul>
+    <ul>
+      <pre><code>$ <b>gdalwarp</b> <em>-co "TFW=YES"</em> [input file] deleteme.tif</code></pre>
+    </ul>
+    <ul>
+      <pre><code>$ <b>gdalwarp</b> -s_srs [source file cs] -t_srs [desired cs] -r bilinear [input file] [output file]</code></pre>
+    </ul>
+    <ul>
+      <pre><code>$ <b>gdal_translate</b> -of GTiff -ot UInt16 -scale [dem min/max values] 0 65535 [input file] [output file]</code></pre>
+    </ul>
+  </div>
 
-    <h3>Soft
-      <ul>
-        <li> QGIS/GDAL</li>
-        <li> Blender</li>
-      </ul>
-    </h3>
-
-
-    <h4>Data</h4>
+  <div>Plane <br>
+    Not an actual plane
   </div>
 
 
