@@ -71,10 +71,10 @@
       <pre><code>$ <b>gdalwarp</b> <em>-co "TFW=YES"</em> [input file] deleteme.tif</code></pre>
     </ul>
     <ul>
-      <pre><code>$ <b>gdalwarp</b> -s_srs [source file cs] -t_srs [desired cs] -r bilinear [input file] [output file]</code></pre>
+      <pre><code>$ <b>gdalwarp</b> <em>-s_srs</em> [source file cs] <em>-t_srs</em> [desired cs] <em>-r bilinear</em> [input file] [output file]</code></pre>
     </ul>
     <ul>
-      <pre><code>$ <b>gdal_translate</b> -of GTiff -ot UInt16 -scale [dem min/max values] 0 65535 [input file] [output file]</code></pre>
+      <pre><code>$ <b>gdal_translate</b> -of GTiff <em>-ot UInt16</em> <em>-scale</em> [dem min/max values] <em>0 65535</em> [input file] [output file]</code></pre>
     </ul>
   </div>
 
