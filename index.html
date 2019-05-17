@@ -21,8 +21,6 @@
     <h3 class="nowrap">Amanti Lulo / Cartographer </h3>
     <br>
     <h3>harta.xyz/oscal_2019</h3>
-    <br>
-    <!-- <h3><a href="https://github.com/diskmanti/oscal_2019">Project @ github.com/diskmanti/oscal_leaflet </a></h3> -->
     <notes>Talk about self</notes>
   </div>
 
@@ -61,9 +59,9 @@
     <a href="http://http://shadedrelief.com/">> Tom Patterson</a>
   </div>
 
-  <div class="layout" style="grid-template-columns: 50% 50%;">
+  <div>
     <img src="./img/hillshade_demo.png" alt="">
-    <img src="./img/blender_demo.png" alt="">
+    <!-- <img src="./img/blender_demo.png" alt=""> -->
     <notes>According to Leland Brown the first one looks like wrinkled tinfoil, sharp(remention sharpish look) edges
     </notes>
   </div>
@@ -71,14 +69,12 @@
   <div>
     <h2>Steps to awesome</h2>
     <ol>
-      <ol>Prep</ol>
-      <ol>Plane</ol>
-      <ol>Camera</ol>
-      <ol>Sun</ol> <!-- praise the sun reference to dark souls -->
-      <ol>Final Adjustments</ol>
-      <ol>Thoughts, link to
-        <link rel="stylesheet" href="https://www.axismaps.com/blog/2018/05/relief-in-10-steps/"> axis maps</li>
-      </ol>
+      <li>Prep</li>
+      <li>Plane</li>
+      <li>Camera</li>
+      <li>Sun</li> <!-- praise the sun reference to dark souls -->
+      <li>Final Tweaks</li>
+    </ol>
   </div>
 
   <div>Prep
@@ -109,7 +105,7 @@
   </div>
 
   <div>Plane <br>
-    <div class="nowrap">Not an actual plane</div>
+    <div class="nowrap">Not an actual ✈️</div>
     <notes>
       Plane dimensions
       Material setup
@@ -119,7 +115,7 @@
     </notes>
   </div>
 
-  <div>Camera
+  <div>Camera 📷
     <notes>
       Position
       Rotation - 0 45 135 - explain why
@@ -153,7 +149,7 @@
     </notes>
   </div>
 
-  <div>Final Adjustements
+  <div>Final Tweaks
     <notes>
       Node editor{Add - Converter -Math} - Multiply
       Render settings - Samples{300 final render}
@@ -161,6 +157,8 @@
       Light Paths - Limited Global Illumination
     </notes>
   </div>
+
+  <div><img src="./img/blender_render.gif" alt=""></div>
 
   <div> <a href="http://www.textureshading.com/Home.html">Texture Shading</a>
     <h6>Texture shading emphasizes the drainage network (canyons and ridges) of the landscape and exhibits a visual
@@ -186,7 +184,46 @@
 
   <div>QGIS/Photoshop Time</div>
 
+  <div><img src="./img/final_print.png" alt=""></div>
 
+  <div>Final Thoughts</div>
+
+  <div>
+    <h1> <a href="https://www.axismaps.com/blog/2018/05/relief-in-10-steps/" target="_blank">10 eeeeeeasy steps</a>
+    </h1>
+    <ol>
+      <li>Download a good digital elevation model</li>
+      <li>Genereate a shaded relief image using Blender</li>
+      <li> Set up a QGIS project with land cover data. Reduce it to only a few colors (mainly, evergreen forest and
+        “everything else”) and export it with dimensions matching the relief image</li>
+      <li>In Photoshop, add land cover, then the relief layer with a “multiply” blending mode</li>
+      <li> Heavily blur the land cover so that it’s not harsh and pixelated. It becomes a subtle base layer, not an
+        essential piece of data</li>
+      <li> Add water lines and pliygons to QGIS, style, export, and add to Photoshop above land cover</li>
+      <li> Use some Photoshop tricks to make relief highlights a bit brigher and warmer-colored, and shadows a cooler
+        color</li>
+      <li> Generate and label contour lines from the DEM using QGIS, then export and add them as a Photoshop layer.</li>
+      <li> Add roads to the QGIS project. Export and style them with
+        Illustrator, and place the .ai file as a layer in Photoshop underneath the relief. (Shadows thus fall on roads
+        as they would in real life.)</li>
+      <li> Label all the peaks, physical features, and towns one by one in Illustrator (no GIS data involved), and place
+        them into Photoshop.</li>
+    </ol>
+  </div>
+
+  <div>
+    Kudos!
+    <ul>
+      <li>Daniel Huffman</li>
+      <li>Leland Brown</li>
+      <li>Tom Patterson</li>
+      <li>Tom Macwright</li>
+    </ul>
+  </div>
+
+  <div>Thank You! <br>
+    Go make maps great again 🤯 🗺️
+  </div>
 
 
 
