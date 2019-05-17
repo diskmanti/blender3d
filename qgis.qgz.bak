@@ -1,0 +1,837 @@
+<!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
+<qgis version="3.6.2-Noosa" projectname="">
+  <homePath path=""/>
+  <title></title>
+  <autotransaction active="0"/>
+  <evaluateDefaultValues active="0"/>
+  <trust active="0"/>
+  <projectCrs>
+    <spatialrefsys>
+      <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+      <srsid>3118</srsid>
+      <srid>32634</srid>
+      <authid>EPSG:32634</authid>
+      <description>WGS 84 / UTM zone 34N</description>
+      <projectionacronym>utm</projectionacronym>
+      <ellipsoidacronym>WGS84</ellipsoidacronym>
+      <geographicflag>false</geographicflag>
+    </spatialrefsys>
+  </projectCrs>
+  <layer-tree-group>
+    <customproperties/>
+    <layer-tree-layer id="K_34_124_C_d__82_300dpi_Cropped_3564af68_d0fe_4e8a_9994_ec391631fb85" source="./tt/rus_map/K-34-124-C-d__82_300dpi_Cropped.tif" name="K-34-124-C-d__82_300dpi_Cropped" providerKey="gdal" checked="Qt::Checked" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer id="dem_utm_scale_a31950fd_61e2_4dee_8986_5262e610c7ac" source="./tt/dem-utm-scale.tif" name="dem-utm-scale" providerKey="gdal" checked="Qt::Unchecked" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer id="my_image_09d532a5_b906_46f6_b983_8e850aae17ee" source="./tt/texture_shading/my_image.tif" name="my_image" providerKey="gdal" checked="Qt::Checked" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer id="final_render2_b4dd72c1_365d_4977_be56_d1397424b328" source="./tt/final_render2.tif" name="final_render2" providerKey="gdal" checked="Qt::Checked" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer id="dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f" source="./tt/dem-utm.tif" name="dem-utm" providerKey="gdal" checked="Qt::Unchecked" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <custom-order enabled="0">
+      <item>dem_utm_scale_a31950fd_61e2_4dee_8986_5262e610c7ac</item>
+      <item>final_render2_b4dd72c1_365d_4977_be56_d1397424b328</item>
+      <item>my_image_09d532a5_b906_46f6_b983_8e850aae17ee</item>
+      <item>K_34_124_C_d__82_300dpi_Cropped_3564af68_d0fe_4e8a_9994_ec391631fb85</item>
+      <item>dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f</item>
+    </custom-order>
+  </layer-tree-group>
+  <snapping-settings tolerance="12" enabled="0" type="1" intersection-snapping="0" unit="1" mode="2">
+    <individual-layer-settings/>
+  </snapping-settings>
+  <relations/>
+  <mapcanvas annotationsVisible="1" name="theMapCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>382455.58867005398496985</xmin>
+      <ymin>4461477.91762600652873516</ymin>
+      <xmax>393826.6691481564193964</xmax>
+      <ymax>4476240.87834805063903332</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>3118</srsid>
+        <srid>32634</srid>
+        <authid>EPSG:32634</authid>
+        <description>WGS 84 / UTM zone 34N</description>
+        <projectionacronym>utm</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectModels/>
+  <legend updateDrawingOrder="true">
+    <legendlayer drawingOrder="-1" showFeatureCount="0" open="true" name="K-34-124-C-d__82_300dpi_Cropped" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="K_34_124_C_d__82_300dpi_Cropped_3564af68_d0fe_4e8a_9994_ec391631fb85" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" showFeatureCount="0" open="true" name="dem-utm-scale" checked="Qt::Unchecked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="0" layerid="dem_utm_scale_a31950fd_61e2_4dee_8986_5262e610c7ac" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" showFeatureCount="0" open="true" name="my_image" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="my_image_09d532a5_b906_46f6_b983_8e850aae17ee" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" showFeatureCount="0" open="true" name="final_render2" checked="Qt::Checked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="1" layerid="final_render2_b4dd72c1_365d_4977_be56_d1397424b328" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" showFeatureCount="0" open="true" name="dem-utm" checked="Qt::Unchecked">
+      <filegroup open="true" hidden="false">
+        <legendlayerfile visible="0" layerid="dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f" isInOverview="0"/>
+      </filegroup>
+    </legendlayer>
+  </legend>
+  <mapViewDocks/>
+  <mapViewDocks3D>
+    <view x="495" area="2" floating="1" width="400" y="187" name="3D Map 1" height="400">
+      <qgis3d>
+        <origin x="372581" z="0" y="4.48446e+06"/>
+        <color background="255,255,255,255" selection="255,255,0,255"/>
+        <crs>
+          <spatialrefsys>
+            <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+            <srsid>3118</srsid>
+            <srid>32634</srid>
+            <authid>EPSG:32634</authid>
+            <description>WGS 84 / UTM zone 34N</description>
+            <projectionacronym>utm</projectionacronym>
+            <ellipsoidacronym>WGS84</ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <point-lights>
+          <point-light x="0" attenuation-2="0" color="255,255,255,255" attenuation-0="0" z="0" y="1000" intensity="0.5" attenuation-1="0"/>
+        </point-lights>
+        <terrain max-terrain-error="3" exaggeration="1" shading-enabled="0" map-theme="" show-labels="0" max-ground-error="1" texture-size="512">
+          <shading-material ambient="25,25,25,255" diffuse="179,179,179,255" shininess="0" specular="255,255,255,255"/>
+          <layers>
+            <layer id="K_34_124_C_d__82_300dpi_Cropped_3564af68_d0fe_4e8a_9994_ec391631fb85"/>
+            <layer id="my_image_09d532a5_b906_46f6_b983_8e850aae17ee"/>
+            <layer id="final_render2_b4dd72c1_365d_4977_be56_d1397424b328"/>
+          </layers>
+          <generator type="flat"/>
+        </terrain>
+        <renderers/>
+        <skybox enabled="0" file-ext="" file-base=""/>
+        <debug bounding-boxes="0" camera-view-center="0" terrain-tile-info="0"/>
+      </qgis3d>
+      <camera x="15560.423828125" pitch="0" elev="0" yaw="0" dist="18137.4" y="15599.9677734375"/>
+      <animation3d interpolation="0">
+        <keyframes/>
+      </animation3d>
+    </view>
+  </mapViewDocks3D>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>degrees</units>
+    <extent>
+      <xmin>0</xmin>
+      <ymin>0</ymin>
+      <xmax>0</xmax>
+      <ymax>0</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=longlat +datum=WGS84 +no_defs</proj4>
+        <srsid>3452</srsid>
+        <srid>4326</srid>
+        <authid>EPSG:4326</authid>
+        <description>WGS 84</description>
+        <projectionacronym>longlat</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>true</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <projectlayers>
+    <maplayer refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" minScale="1e+08" autoRefreshEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" type="raster" refreshOnNotifyMessage="">
+      <extent>
+        <xmin>383068.82936045079259202</xmin>
+        <ymin>4465454.24301116354763508</ymin>
+        <xmax>393817.01191545726032928</xmax>
+        <ymax>4474860.89433116558939219</ymax>
+      </extent>
+      <id>K_34_124_C_d__82_300dpi_Cropped_3564af68_d0fe_4e8a_9994_ec391631fb85</id>
+      <datasource>./tt/rus_map/K-34-124-C-d__82_300dpi_Cropped.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>K-34-124-C-d__82_300dpi_Cropped</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3118</srsid>
+          <srid>32634</srid>
+          <authid>EPSG:32634</authid>
+          <description>WGS 84 / UTM zone 34N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList useSrcNoData="0" bandNo="2"/>
+        <noDataList useSrcNoData="0" bandNo="3"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer blueBand="3" alphaBand="-1" opacity="1" type="multibandcolor" redBand="1" greenBand="2">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>MinMax</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeOn="0" saturation="100" colorizeStrength="100" grayscaleMode="0" colorizeGreen="128" colorizeBlue="128" colorizeRed="255"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>8</blendMode>
+    </maplayer>
+    <maplayer refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" minScale="1e+08" autoRefreshEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" type="raster" refreshOnNotifyMessage="">
+      <extent>
+        <xmin>329262.30286242649890482</xmin>
+        <ymin>4428219.51548745948821306</ymin>
+        <xmax>415899.10650511225685477</xmax>
+        <ymax>4540699.2162268552929163</ymax>
+      </extent>
+      <id>dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f</id>
+      <datasource>./tt/dem-utm.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>dem-utm</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3118</srsid>
+          <srid>32634</srid>
+          <authid>EPSG:32634</authid>
+          <description>WGS 84 / UTM zone 34N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="1" bandNo="1"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer grayBand="1" alphaBand="-1" opacity="1" type="singlebandgray" gradient="BlackToWhite">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>MinMax</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+          <contrastEnhancement>
+            <minValue>-9</minValue>
+            <maxValue>2038</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </contrastEnhancement>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeOn="0" saturation="0" colorizeStrength="100" grayscaleMode="0" colorizeGreen="128" colorizeBlue="128" colorizeRed="255"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" minScale="1e+08" autoRefreshEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" type="raster" refreshOnNotifyMessage="">
+      <extent>
+        <xmin>329262.30286242649890482</xmin>
+        <ymin>4428219.51548745948821306</ymin>
+        <xmax>415899.10650511225685477</xmax>
+        <ymax>4540699.2162268552929163</ymax>
+      </extent>
+      <id>dem_utm_scale_a31950fd_61e2_4dee_8986_5262e610c7ac</id>
+      <datasource>./tt/dem-utm-scale.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>dem-utm-scale</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3118</srsid>
+          <srid>32634</srid>
+          <authid>EPSG:32634</authid>
+          <description>WGS 84 / UTM zone 34N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer classificationMin="0" alphaBand="-1" classificationMax="65535" opacity="0.287" type="singlebandpseudocolor" band="1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>MinMax</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+          <rastershader>
+            <colorrampshader clip="0" colorRampType="INTERPOLATED" classificationMode="1">
+              <colorramp type="gradient" name="[source]">
+                <prop v="247,252,245,255" k="color1"/>
+                <prop v="0,68,27,255" k="color2"/>
+                <prop v="0" k="discrete"/>
+                <prop v="gradient" k="rampType"/>
+                <prop v="0.13;229,245,224,255:0.26;199,233,192,255:0.39;161,217,155,255:0.52;116,196,118,255:0.65;65,171,93,255:0.78;35,139,69,255:0.9;0,109,44,255" k="stops"/>
+              </colorramp>
+              <item color="#f7fcf5" value="0" alpha="255" label="0"/>
+              <item color="#e5f5e0" value="8519.55" alpha="255" label="8519.6"/>
+              <item color="#c7e9c0" value="17039.1" alpha="255" label="17039"/>
+              <item color="#a1d99b" value="25558.65" alpha="255" label="25559"/>
+              <item color="#74c476" value="34078.2" alpha="255" label="34078"/>
+              <item color="#41ab5d" value="42597.75" alpha="255" label="42598"/>
+              <item color="#238b45" value="51117.3" alpha="255" label="51117"/>
+              <item color="#006d2c" value="58981.5" alpha="255" label="58982"/>
+              <item color="#00441b" value="65535" alpha="255" label="65535"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeOn="0" saturation="0" colorizeStrength="100" grayscaleMode="0" colorizeGreen="128" colorizeBlue="128" colorizeRed="255"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" minScale="1e+08" autoRefreshEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" type="raster" refreshOnNotifyMessage="">
+      <extent>
+        <xmin>329262.30286242644069716</xmin>
+        <ymin>4428219.51548734493553638</ymin>
+        <xmax>415899.10650520026683807</xmax>
+        <ymax>4540699.2162268552929163</ymax>
+      </extent>
+      <id>final_render2_b4dd72c1_365d_4977_be56_d1397424b328</id>
+      <datasource>./tt/final_render2.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>final_render2</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3118</srsid>
+          <srid>32634</srid>
+          <authid>EPSG:32634</authid>
+          <description>WGS 84 / UTM zone 34N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial minx="0" miny="0" crs="" dimensions="2" maxx="0" maxz="0" maxy="0" minz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1"/>
+        <noDataList useSrcNoData="0" bandNo="2"/>
+        <noDataList useSrcNoData="0" bandNo="3"/>
+        <noDataList useSrcNoData="0" bandNo="4"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="WMSBackgroundLayer" value="false"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer blueBand="3" alphaBand="4" opacity="1" type="multibandcolor" redBand="1" greenBand="2">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>MinMax</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeOn="0" saturation="0" colorizeStrength="100" grayscaleMode="0" colorizeGreen="128" colorizeBlue="128" colorizeRed="255"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer refreshOnNotifyEnabled="0" maxScale="0" autoRefreshTime="0" minScale="1e+08" autoRefreshEnabled="0" styleCategories="AllStyleCategories" hasScaleBasedVisibilityFlag="0" type="raster" refreshOnNotifyMessage="">
+      <extent>
+        <xmin>329262.30286243447335437</xmin>
+        <ymin>4428219.51548748090863228</ymin>
+        <xmax>415899.10650511982385069</xmax>
+        <ymax>4540699.21622687578201294</ymax>
+      </extent>
+      <id>my_image_09d532a5_b906_46f6_b983_8e850aae17ee</id>
+      <datasource>./tt/texture_shading/my_image.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>my_image</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3118</srsid>
+          <srid>32634</srid>
+          <authid>EPSG:32634</authid>
+          <description>WGS 84 / UTM zone 34N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <contact>
+          <name></name>
+          <organization></organization>
+          <position></position>
+          <voice></voice>
+          <fax></fax>
+          <email></email>
+          <role></role>
+        </contact>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>false</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent>
+          <spatial minx="0" miny="0" crs="" dimensions="2" maxx="0" maxz="0" maxy="0" minz="0"/>
+          <temporal>
+            <period>
+              <start></start>
+              <end></end>
+            </period>
+          </temporal>
+        </extent>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList useSrcNoData="0" bandNo="1"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="WMSBackgroundLayer" value="false"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer grayBand="1" alphaBand="-1" opacity="1" type="singlebandgray" gradient="BlackToWhite">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>MinMax</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+          <contrastEnhancement>
+            <minValue>2612</minValue>
+            <maxValue>63717</maxValue>
+            <algorithm>StretchToMinimumMaximum</algorithm>
+          </contrastEnhancement>
+        </rasterrenderer>
+        <brightnesscontrast contrast="0" brightness="0"/>
+        <huesaturation colorizeOn="0" saturation="0" colorizeStrength="100" grayscaleMode="0" colorizeGreen="128" colorizeBlue="128" colorizeRed="255"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>6</blendMode>
+    </maplayer>
+  </projectlayers>
+  <layerorder>
+    <layer id="dem_utm_scale_a31950fd_61e2_4dee_8986_5262e610c7ac"/>
+    <layer id="final_render2_b4dd72c1_365d_4977_be56_d1397424b328"/>
+    <layer id="my_image_09d532a5_b906_46f6_b983_8e850aae17ee"/>
+    <layer id="K_34_124_C_d__82_300dpi_Cropped_3564af68_d0fe_4e8a_9994_ec391631fb85"/>
+    <layer id="dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f"/>
+  </layerorder>
+  <properties>
+    <WMTSGrids>
+      <Config type="QStringList"/>
+      <CRS type="QStringList"/>
+    </WMTSGrids>
+    <PositionPrecision>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+    </PositionPrecision>
+    <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <PAL>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <SearchMethod type="int">0</SearchMethod>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <TextFormat type="int">0</TextFormat>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+    </PAL>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <Measurement>
+      <DistanceUnits type="QString">meters</DistanceUnits>
+      <AreaUnits type="QString">m2</AreaUnits>
+    </Measurement>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Gui>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+    </Gui>
+    <WMSContactPhone type="QString"></WMSContactPhone>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <WFSTLayers>
+      <Update type="QStringList"/>
+      <Insert type="QStringList"/>
+      <Delete type="QStringList"/>
+    </WFSTLayers>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
+    <WFSUrl type="QString"></WFSUrl>
+    <WMSRootName type="QString"></WMSRootName>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMTSJpegLayers>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSJpegLayers>
+    <WCSLayers type="QStringList"/>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <WMSContactMail type="QString"></WMSContactMail>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WFSLayers type="QStringList"/>
+    <WMTSPngLayers>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSPngLayers>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
+    <WMTSLayers>
+      <Layer type="QStringList"/>
+      <Group type="QStringList"/>
+      <Project type="bool">false</Project>
+    </WMTSLayers>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <DefaultStyles>
+      <RandomColors type="bool">true</RandomColors>
+      <Fill type="QString"></Fill>
+      <Opacity type="double">1</Opacity>
+      <Line type="QString"></Line>
+      <Marker type="QString"></Marker>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+  </properties>
+  <visibility-presets/>
+  <transformContext/>
+  <projectMetadata>
+    <identifier></identifier>
+    <parentidentifier></parentidentifier>
+    <language></language>
+    <type></type>
+    <title></title>
+    <abstract></abstract>
+    <contact>
+      <name></name>
+      <organization></organization>
+      <position></position>
+      <voice></voice>
+      <fax></fax>
+      <email></email>
+      <role></role>
+    </contact>
+    <links/>
+    <author>Amanti Lulo</author>
+    <creation>2019-05-17T17:00:51</creation>
+  </projectMetadata>
+  <Annotations/>
+  <Layouts/>
+</qgis>
