@@ -8,6 +8,7 @@
   <link href="big.css" rel="stylesheet" type="text/css" />
   <link href="./themes/dark.css" rel="stylesheet" type="text/css" />
   <link href="./manti.css" rel="stylesheet" type="text/css" />
+  <script>BIG_ASPECT_RATIO = 2;</script>
   <script src="big.js"></script>
 </head>
 
@@ -88,20 +89,19 @@
     </ul>
   </div>
 
+  <div>Merge and/or Clip your dem/topo</div>
+
   <div>
-    <h1>Merge and/or Clip your dem/topo</h1>
-    <ul>
-      <pre><code>$ <b>gdalinfo</b> [input file]</code></pre>
-    </ul>
-    <ul>
-      <pre><code>$ <b>gdalwarp</b> <em>-co "TFW=YES"</em> [input file] deleteme.tif</code></pre>
-    </ul>
-    <ul>
-      <pre><code>$ <b>gdalwarp</b> <em>-s_srs</em> [source file cs] <em>-t_srs</em> [desired cs] <em>-r bilinear</em> [input file] [output file]</code></pre>
-    </ul>
-    <ul>
-      <pre><code>$ <b>gdal_translate</b> -of GTiff <em>-ot UInt16</em> <em>-scale</em> [dem min/max values] <em>0 65535</em> [input file] [output file]</code></pre>
-    </ul>
+    <pre><code>$ <b>gdalinfo</b> [input file]</code></pre> <br>
+    <pre><code>$ <b>gdalwarp</b> <em>-co "TFW=YES"</em> [input file] deleteme.tif</code></pre> <br>
+    <pre><code>$ <b>gdalwarp</b> <em>-s_srs</em> [source cs] <em>-t_srs</em> [desired cs]  
+      <em>-r bilinear</em> 
+      [input file] [output file]</code></pre>
+    <br>
+    <pre><code>$ <b>gdal_translate</b> -of GTiff <em>-ot UInt16</em>
+       <em>-scale</em> [dem min/max values] <em>0 65535</em>
+       [input file] [output file]</code></pre>
+
   </div>
 
   <div>Prep Blender
@@ -162,10 +162,26 @@
     </notes>
   </div>
 
+  <div> <a href="http://www.textureshading.com/Home.html">Texture Shading</a>
+    <h6>Texture shading emphasizes the drainage network (canyons and ridges) of the landscape and exhibits a visual
+      hierarchy that reflects this structure. <br> > Leland Brown </h6>
+  </div>
 
-  <div>Texture shading
-    <ul>texture.exe 1/3 ..\dem-utm-scale.flt my_texture</ul>
-    <ul>texture_image.exe -2 my_texture.flt my_image</ul>
+
+  <div>
+    <pre><code>$ <b>gdal_translate</b> <em>-of EHdr</em> -ot Float32 [input dem] [output .flt]</code></pre> <br>
+    <pre><code>$ <b>texture.exe</b> <em>1/3</em> ..\dem-utm-scale.flt my_texture</code></pre> <br>
+    <pre><code>$ <b>texture_image.exe</b> <em>-2</em> my_texture.flt my_image</code></pre>
+    <notes>
+      We need GridFloat format for this program
+
+      First param - Lower values of detail retain more elevation information, giving more sense of the
+      overall, large structures and elevation trends in the terrain, at the expense of fine texture detail
+
+      Second param produces the texture image. Higher numbers increase contrast in
+      the midtones, but may lose detail in the lightest and darkest features. Lower numbers
+      highlight only the sharpest ridges and deepest canyons but reduce contrast overal
+    </notes>
   </div>
 
 
