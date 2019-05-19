@@ -1,5 +1,5 @@
 <!DOCTYPE qgis PUBLIC 'http://mrcc.com/qgis.dtd' 'SYSTEM'>
-<qgis projectname="" version="3.6.2-Noosa">
+<qgis version="3.6.2-Noosa" projectname="">
   <homePath path=""/>
   <title></title>
   <autotransaction active="0"/>
@@ -19,32 +19,36 @@
   </projectCrs>
   <layer-tree-group>
     <customproperties/>
-    <layer-tree-layer id="dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f" providerKey="gdal" name="dem-utm" source="./tt/dem-utm.tif" checked="Qt::Checked" expanded="0">
+    <layer-tree-layer source="./tt/dem-utm.tif" checked="Qt::Checked" providerKey="gdal" id="dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f" name="dem-utm" expanded="0">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer id="my_image_09d532a5_b906_46f6_b983_8e850aae17ee" providerKey="gdal" name="my_image" source="./tt/texture_shading/my_image.tif" checked="Qt::Checked" expanded="0">
+    <layer-tree-layer source="./tt/dem-utm.tif" checked="Qt::Unchecked" providerKey="gdal" id="dem_utm_c92b5a35_951f_475d_b02c_5bcd7966dfeb" name="dem-utm copy" expanded="0">
       <customproperties/>
     </layer-tree-layer>
-    <layer-tree-layer id="final_render2_b4dd72c1_365d_4977_be56_d1397424b328" providerKey="gdal" name="final_render2" source="./tt/final_render2.tif" checked="Qt::Checked" expanded="1">
+    <layer-tree-layer source="./tt/texture_shading/my_image.tif" checked="Qt::Checked" providerKey="gdal" id="my_image_09d532a5_b906_46f6_b983_8e850aae17ee" name="my_image" expanded="1">
+      <customproperties/>
+    </layer-tree-layer>
+    <layer-tree-layer source="./tt/final_render2.tif" checked="Qt::Checked" providerKey="gdal" id="final_render2_b4dd72c1_365d_4977_be56_d1397424b328" name="final_render2" expanded="1">
       <customproperties/>
     </layer-tree-layer>
     <custom-order enabled="0">
       <item>final_render2_b4dd72c1_365d_4977_be56_d1397424b328</item>
       <item>my_image_09d532a5_b906_46f6_b983_8e850aae17ee</item>
       <item>dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f</item>
+      <item>dem_utm_c92b5a35_951f_475d_b02c_5bcd7966dfeb</item>
     </custom-order>
   </layer-tree-group>
-  <snapping-settings type="1" enabled="0" tolerance="12" unit="1" intersection-snapping="0" mode="2">
+  <snapping-settings type="1" intersection-snapping="0" mode="2" enabled="0" tolerance="12" unit="1">
     <individual-layer-settings/>
   </snapping-settings>
   <relations/>
   <mapcanvas annotationsVisible="1" name="theMapCanvas">
     <units>meters</units>
     <extent>
-      <xmin>371119.6152326917508617</xmin>
-      <ymin>4424043.26722367946058512</ymin>
-      <xmax>416603.93714510148856789</xmax>
-      <ymax>4483095.11011185590177774</ymax>
+      <xmin>367418.97009298432385549</xmin>
+      <ymin>4430951.29053512029349804</ymin>
+      <xmax>412903.29200539406156167</xmax>
+      <ymax>4490003.13342329673469067</ymax>
     </extent>
     <rotation>0</rotation>
     <destinationsrs>
@@ -64,26 +68,103 @@
   </mapcanvas>
   <projectModels/>
   <legend updateDrawingOrder="true">
-    <legendlayer drawingOrder="-1" open="false" name="dem-utm" checked="Qt::Checked" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" checked="Qt::Checked" name="dem-utm" open="false" showFeatureCount="0">
       <filegroup hidden="false" open="false">
-        <legendlayerfile layerid="dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f" visible="1" isInOverview="0"/>
+        <legendlayerfile visible="1" isInOverview="0" layerid="dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="false" name="my_image" checked="Qt::Checked" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" checked="Qt::Unchecked" name="dem-utm copy" open="false" showFeatureCount="0">
       <filegroup hidden="false" open="false">
-        <legendlayerfile layerid="my_image_09d532a5_b906_46f6_b983_8e850aae17ee" visible="1" isInOverview="0"/>
+        <legendlayerfile visible="0" isInOverview="0" layerid="dem_utm_c92b5a35_951f_475d_b02c_5bcd7966dfeb"/>
       </filegroup>
     </legendlayer>
-    <legendlayer drawingOrder="-1" open="true" name="final_render2" checked="Qt::Checked" showFeatureCount="0">
+    <legendlayer drawingOrder="-1" checked="Qt::Checked" name="my_image" open="true" showFeatureCount="0">
       <filegroup hidden="false" open="true">
-        <legendlayerfile layerid="final_render2_b4dd72c1_365d_4977_be56_d1397424b328" visible="1" isInOverview="0"/>
+        <legendlayerfile visible="1" isInOverview="0" layerid="my_image_09d532a5_b906_46f6_b983_8e850aae17ee"/>
+      </filegroup>
+    </legendlayer>
+    <legendlayer drawingOrder="-1" checked="Qt::Checked" name="final_render2" open="true" showFeatureCount="0">
+      <filegroup hidden="false" open="true">
+        <legendlayerfile visible="1" isInOverview="0" layerid="final_render2_b4dd72c1_365d_4977_be56_d1397424b328"/>
       </filegroup>
     </legendlayer>
   </legend>
   <mapViewDocks/>
   <mapViewDocks3D/>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>382886.13215870596468449</xmin>
+      <ymin>4445159.57354217488318682</ymin>
+      <xmax>405628.29311491083353758</xmax>
+      <ymax>4474685.49498626310378313</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>3118</srsid>
+        <srid>32634</srid>
+        <authid>EPSG:32634</authid>
+        <description>WGS 84 / UTM zone 34N</description>
+        <projectionacronym>utm</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>382886.13215870596468449</xmin>
+      <ymin>4445159.57354217488318682</ymin>
+      <xmax>405628.29311491083353758</xmax>
+      <ymax>4474685.49498626310378313</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>3118</srsid>
+        <srid>32634</srid>
+        <authid>EPSG:32634</authid>
+        <description>WGS 84 / UTM zone 34N</description>
+        <projectionacronym>utm</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
+  <mapcanvas annotationsVisible="1" name="mAreaCanvas">
+    <units>meters</units>
+    <extent>
+      <xmin>382886.13215870596468449</xmin>
+      <ymin>4445159.57354217488318682</ymin>
+      <xmax>405628.29311491083353758</xmax>
+      <ymax>4474685.49498626310378313</ymax>
+    </extent>
+    <rotation>0</rotation>
+    <destinationsrs>
+      <spatialrefsys>
+        <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+        <srsid>3118</srsid>
+        <srid>32634</srid>
+        <authid>EPSG:32634</authid>
+        <description>WGS 84 / UTM zone 34N</description>
+        <projectionacronym>utm</projectionacronym>
+        <ellipsoidacronym>WGS84</ellipsoidacronym>
+        <geographicflag>false</geographicflag>
+      </spatialrefsys>
+    </destinationsrs>
+    <rendermaptile>0</rendermaptile>
+    <expressionContextScope/>
+  </mapcanvas>
   <projectlayers>
-    <maplayer type="raster" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" autoRefreshTime="0" autoRefreshEnabled="0" maxScale="0" minScale="1e+08">
+    <maplayer autoRefreshEnabled="0" refreshOnNotifyEnabled="0" type="raster" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" styleCategories="AllStyleCategories" minScale="1e+08" refreshOnNotifyMessage="">
       <extent>
         <xmin>329262.30286242649890482</xmin>
         <ymin>4428219.51548745948821306</ymin>
@@ -96,6 +177,171 @@
         <value></value>
       </keywordList>
       <layername>dem-utm</layername>
+      <srs>
+        <spatialrefsys>
+          <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
+          <srsid>3118</srsid>
+          <srid>32634</srid>
+          <authid>EPSG:32634</authid>
+          <description>WGS 84 / UTM zone 34N</description>
+          <projectionacronym>utm</projectionacronym>
+          <ellipsoidacronym>WGS84</ellipsoidacronym>
+          <geographicflag>false</geographicflag>
+        </spatialrefsys>
+      </srs>
+      <resourceMetadata>
+        <identifier></identifier>
+        <parentidentifier></parentidentifier>
+        <language></language>
+        <type></type>
+        <title></title>
+        <abstract></abstract>
+        <links/>
+        <fees></fees>
+        <encoding></encoding>
+        <crs>
+          <spatialrefsys>
+            <proj4></proj4>
+            <srsid>0</srsid>
+            <srid>0</srid>
+            <authid></authid>
+            <description></description>
+            <projectionacronym></projectionacronym>
+            <ellipsoidacronym></ellipsoidacronym>
+            <geographicflag>true</geographicflag>
+          </spatialrefsys>
+        </crs>
+        <extent/>
+      </resourceMetadata>
+      <provider>gdal</provider>
+      <noData>
+        <noDataList bandNo="1" useSrcNoData="1"/>
+      </noData>
+      <map-layer-style-manager current="default">
+        <map-layer-style name="default"/>
+      </map-layer-style-manager>
+      <flags>
+        <Identifiable>1</Identifiable>
+        <Removable>1</Removable>
+        <Searchable>1</Searchable>
+      </flags>
+      <customproperties>
+        <property key="identify/format" value="Value"/>
+      </customproperties>
+      <pipe>
+        <rasterrenderer classificationMin="-9" band="1" classificationMax="2038" type="singlebandpseudocolor" opacity="0.576" alphaBand="-1">
+          <rasterTransparency/>
+          <minMaxOrigin>
+            <limits>MinMax</limits>
+            <extent>WholeRaster</extent>
+            <statAccuracy>Estimated</statAccuracy>
+            <cumulativeCutLower>0.02</cumulativeCutLower>
+            <cumulativeCutUpper>0.98</cumulativeCutUpper>
+            <stdDevFactor>2</stdDevFactor>
+          </minMaxOrigin>
+          <rastershader>
+            <colorrampshader clip="0" colorRampType="INTERPOLATED" classificationMode="1">
+              <colorramp type="cpt-city" name="[source]">
+                <prop k="inverted" v="0"/>
+                <prop k="rampType" v="cpt-city"/>
+                <prop k="schemeName" v="tp/tpushuf"/>
+                <prop k="variantName" v=""/>
+              </colorramp>
+              <item value="-9" label="-9" color="#6c98bb" alpha="255"/>
+              <item value="19.4533" label="19.45" color="#96a198" alpha="255"/>
+              <item value="47.9066" label="47.91" color="#9dada3" alpha="255"/>
+              <item value="76.3599" label="76.36" color="#a4b5aa" alpha="255"/>
+              <item value="104.8132" label="104.8" color="#a9bbae" alpha="255"/>
+              <item value="133.0618" label="133.1" color="#aec0b3" alpha="255"/>
+              <item value="161.5151" label="161.5" color="#b3c5b8" alpha="255"/>
+              <item value="189.9684" label="190" color="#b8cbbe" alpha="255"/>
+              <item value="218.4217" label="218.4" color="#bccfc2" alpha="255"/>
+              <item value="246.875" label="246.9" color="#bed1c2" alpha="255"/>
+              <item value="275.3283" label="275.3" color="#c1d1c3" alpha="255"/>
+              <item value="303.7816" label="303.8" color="#c4d2c4" alpha="255"/>
+              <item value="332.2349" label="332.2" color="#c6d2c3" alpha="255"/>
+              <item value="360.6882" label="360.7" color="#c8d4c4" alpha="255"/>
+              <item value="388.9368" label="388.9" color="#ccd5c5" alpha="255"/>
+              <item value="417.3901" label="417.4" color="#d0d5c5" alpha="255"/>
+              <item value="445.8434" label="445.8" color="#d3d7c5" alpha="255"/>
+              <item value="474.2967" label="474.3" color="#d7d7c5" alpha="255"/>
+              <item value="502.75" label="502.8" color="#dad7c4" alpha="255"/>
+              <item value="531.2033" label="531.2" color="#ddd7c3" alpha="255"/>
+              <item value="559.6566" label="559.7" color="#dfd5c3" alpha="255"/>
+              <item value="588.1099" label="588.1" color="#e0d4c2" alpha="255"/>
+              <item value="616.5632" label="616.6" color="#dfd3c2" alpha="255"/>
+              <item value="644.8118" label="644.8" color="#ded2c0" alpha="255"/>
+              <item value="673.2651" label="673.3" color="#e0cfbd" alpha="255"/>
+              <item value="701.7184" label="701.7" color="#dfccbc" alpha="255"/>
+              <item value="730.1717" label="730.2" color="#dfcaba" alpha="255"/>
+              <item value="758.625" label="758.6" color="#dec8b8" alpha="255"/>
+              <item value="787.0783" label="787.1" color="#dec5b7" alpha="255"/>
+              <item value="815.5316" label="815.5" color="#dec4b6" alpha="255"/>
+              <item value="843.9849" label="844" color="#ddc3b5" alpha="255"/>
+              <item value="872.4382" label="872.4" color="#dcc2b4" alpha="255"/>
+              <item value="900.6868" label="900.7" color="#dcc2b4" alpha="255"/>
+              <item value="929.1401" label="929.1" color="#dac4b5" alpha="255"/>
+              <item value="957.5934" label="957.6" color="#dbc5b7" alpha="255"/>
+              <item value="986.0467" label="986" color="#dcc6ba" alpha="255"/>
+              <item value="1014.5" label="1015" color="#dbc6bb" alpha="255"/>
+              <item value="1042.9533" label="1043" color="#dbc8bd" alpha="255"/>
+              <item value="1071.4066" label="1071" color="#dbcac1" alpha="255"/>
+              <item value="1099.8599" label="1100" color="#dacbc2" alpha="255"/>
+              <item value="1128.3132" label="1128" color="#d9cdc4" alpha="255"/>
+              <item value="1156.5618" label="1157" color="#dacec5" alpha="255"/>
+              <item value="1185.0151" label="1185" color="#dbcfc6" alpha="255"/>
+              <item value="1213.4684" label="1213" color="#dbcfc6" alpha="255"/>
+              <item value="1241.9217" label="1242" color="#dbcfc7" alpha="255"/>
+              <item value="1270.375" label="1270" color="#dbcfc8" alpha="255"/>
+              <item value="1298.8283" label="1299" color="#dad0c9" alpha="255"/>
+              <item value="1327.2816" label="1327" color="#dad0ca" alpha="255"/>
+              <item value="1355.7349" label="1356" color="#dad0ca" alpha="255"/>
+              <item value="1384.1882" label="1384" color="#dad0ca" alpha="255"/>
+              <item value="1412.4368" label="1412" color="#dad0ca" alpha="255"/>
+              <item value="1440.8901" label="1441" color="#dad0ca" alpha="255"/>
+              <item value="1469.3434" label="1469" color="#d9cfca" alpha="255"/>
+              <item value="1497.7967" label="1498" color="#d9cecb" alpha="255"/>
+              <item value="1526.25" label="1526" color="#d8cecb" alpha="255"/>
+              <item value="1554.7033" label="1555" color="#d7d0cc" alpha="255"/>
+              <item value="1583.1566" label="1583" color="#d8d1cd" alpha="255"/>
+              <item value="1611.6099" label="1612" color="#d7d2ce" alpha="255"/>
+              <item value="1640.0632" label="1640" color="#d8d2cf" alpha="255"/>
+              <item value="1668.3118" label="1668" color="#d9d3d2" alpha="255"/>
+              <item value="1696.7651" label="1697" color="#d9d5d3" alpha="255"/>
+              <item value="1725.2184" label="1725" color="#d8d7d5" alpha="255"/>
+              <item value="1753.6717" label="1754" color="#dad9d7" alpha="255"/>
+              <item value="1782.125" label="1782" color="#dbdad8" alpha="255"/>
+              <item value="1810.5783" label="1811" color="#dbdbdb" alpha="255"/>
+              <item value="1839.0316" label="1839" color="#dddcda" alpha="255"/>
+              <item value="1867.4849" label="1867" color="#dfdedc" alpha="255"/>
+              <item value="1895.9382" label="1896" color="#e1dfdf" alpha="255"/>
+              <item value="1924.1868" label="1924" color="#e2e0e0" alpha="255"/>
+              <item value="1952.6401" label="1953" color="#e3e2e2" alpha="255"/>
+              <item value="1981.0934" label="1981" color="#e4e3e3" alpha="255"/>
+              <item value="2009.5467" label="2010" color="#e5e5e5" alpha="255"/>
+              <item value="2038" label="2038" color="#e6e6e6" alpha="255"/>
+            </colorrampshader>
+          </rastershader>
+        </rasterrenderer>
+        <brightnesscontrast brightness="0" contrast="0"/>
+        <huesaturation grayscaleMode="0" colorizeGreen="128" colorizeOn="0" colorizeBlue="128" colorizeStrength="100" saturation="100" colorizeRed="255"/>
+        <rasterresampler maxOversampling="2"/>
+      </pipe>
+      <blendMode>0</blendMode>
+    </maplayer>
+    <maplayer autoRefreshEnabled="0" refreshOnNotifyEnabled="0" type="raster" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" styleCategories="AllStyleCategories" minScale="1e+08" refreshOnNotifyMessage="">
+      <extent>
+        <xmin>329262.30286242649890482</xmin>
+        <ymin>4428219.51548745948821306</ymin>
+        <xmax>415899.10650511225685477</xmax>
+        <ymax>4540699.2162268552929163</ymax>
+      </extent>
+      <id>dem_utm_c92b5a35_951f_475d_b02c_5bcd7966dfeb</id>
+      <datasource>./tt/dem-utm.tif</datasource>
+      <keywordList>
+        <value></value>
+      </keywordList>
+      <layername>dem-utm copy</layername>
       <srs>
         <spatialrefsys>
           <proj4>+proj=utm +zone=34 +datum=WGS84 +units=m +no_defs</proj4>
@@ -145,110 +391,27 @@
         <Searchable>1</Searchable>
       </flags>
       <customproperties>
-        <property value="Value" key="identify/format"/>
+        <property key="identify/format" value="Value"/>
       </customproperties>
       <pipe>
-        <rasterrenderer type="singlebandpseudocolor" alphaBand="-1" classificationMin="-9" opacity="0.509" classificationMax="2038" band="1">
+        <rasterrenderer multidirection="0" band="1" zfactor="1" type="hillshade" azimuth="315" opacity="0.576" angle="45" alphaBand="-1">
           <rasterTransparency/>
           <minMaxOrigin>
-            <limits>MinMax</limits>
+            <limits>None</limits>
             <extent>WholeRaster</extent>
             <statAccuracy>Estimated</statAccuracy>
             <cumulativeCutLower>0.02</cumulativeCutLower>
             <cumulativeCutUpper>0.98</cumulativeCutUpper>
             <stdDevFactor>2</stdDevFactor>
           </minMaxOrigin>
-          <rastershader>
-            <colorrampshader colorRampType="INTERPOLATED" clip="0" classificationMode="1">
-              <colorramp type="cpt-city" name="[source]">
-                <prop v="0" k="inverted"/>
-                <prop v="cpt-city" k="rampType"/>
-                <prop v="tp/tpushuf" k="schemeName"/>
-                <prop v="" k="variantName"/>
-              </colorramp>
-              <item value="-9" alpha="255" label="-9" color="#6c98bb"/>
-              <item value="19.4533" alpha="255" label="19.45" color="#96a198"/>
-              <item value="47.9066" alpha="255" label="47.91" color="#9dada3"/>
-              <item value="76.3599" alpha="255" label="76.36" color="#a4b5aa"/>
-              <item value="104.8132" alpha="255" label="104.8" color="#a9bbae"/>
-              <item value="133.0618" alpha="255" label="133.1" color="#aec0b3"/>
-              <item value="161.5151" alpha="255" label="161.5" color="#b3c5b8"/>
-              <item value="189.9684" alpha="255" label="190" color="#b8cbbe"/>
-              <item value="218.4217" alpha="255" label="218.4" color="#bccfc2"/>
-              <item value="246.875" alpha="255" label="246.9" color="#bed1c2"/>
-              <item value="275.3283" alpha="255" label="275.3" color="#c1d1c3"/>
-              <item value="303.7816" alpha="255" label="303.8" color="#c4d2c4"/>
-              <item value="332.2349" alpha="255" label="332.2" color="#c6d2c3"/>
-              <item value="360.6882" alpha="255" label="360.7" color="#c8d4c4"/>
-              <item value="388.9368" alpha="255" label="388.9" color="#ccd5c5"/>
-              <item value="417.3901" alpha="255" label="417.4" color="#d0d5c5"/>
-              <item value="445.8434" alpha="255" label="445.8" color="#d3d7c5"/>
-              <item value="474.2967" alpha="255" label="474.3" color="#d7d7c5"/>
-              <item value="502.75" alpha="255" label="502.8" color="#dad7c4"/>
-              <item value="531.2033" alpha="255" label="531.2" color="#ddd7c3"/>
-              <item value="559.6566" alpha="255" label="559.7" color="#dfd5c3"/>
-              <item value="588.1099" alpha="255" label="588.1" color="#e0d4c2"/>
-              <item value="616.5632" alpha="255" label="616.6" color="#dfd3c2"/>
-              <item value="644.8118" alpha="255" label="644.8" color="#ded2c0"/>
-              <item value="673.2651" alpha="255" label="673.3" color="#e0cfbd"/>
-              <item value="701.7184" alpha="255" label="701.7" color="#dfccbc"/>
-              <item value="730.1717" alpha="255" label="730.2" color="#dfcaba"/>
-              <item value="758.625" alpha="255" label="758.6" color="#dec8b8"/>
-              <item value="787.0783" alpha="255" label="787.1" color="#dec5b7"/>
-              <item value="815.5316" alpha="255" label="815.5" color="#dec4b6"/>
-              <item value="843.9849" alpha="255" label="844" color="#ddc3b5"/>
-              <item value="872.4382" alpha="255" label="872.4" color="#dcc2b4"/>
-              <item value="900.6868" alpha="255" label="900.7" color="#dcc2b4"/>
-              <item value="929.1401" alpha="255" label="929.1" color="#dac4b5"/>
-              <item value="957.5934" alpha="255" label="957.6" color="#dbc5b7"/>
-              <item value="986.0467" alpha="255" label="986" color="#dcc6ba"/>
-              <item value="1014.5" alpha="255" label="1015" color="#dbc6bb"/>
-              <item value="1042.9533" alpha="255" label="1043" color="#dbc8bd"/>
-              <item value="1071.4066" alpha="255" label="1071" color="#dbcac1"/>
-              <item value="1099.8599" alpha="255" label="1100" color="#dacbc2"/>
-              <item value="1128.3132" alpha="255" label="1128" color="#d9cdc4"/>
-              <item value="1156.5618" alpha="255" label="1157" color="#dacec5"/>
-              <item value="1185.0151" alpha="255" label="1185" color="#dbcfc6"/>
-              <item value="1213.4684" alpha="255" label="1213" color="#dbcfc6"/>
-              <item value="1241.9217" alpha="255" label="1242" color="#dbcfc7"/>
-              <item value="1270.375" alpha="255" label="1270" color="#dbcfc8"/>
-              <item value="1298.8283" alpha="255" label="1299" color="#dad0c9"/>
-              <item value="1327.2816" alpha="255" label="1327" color="#dad0ca"/>
-              <item value="1355.7349" alpha="255" label="1356" color="#dad0ca"/>
-              <item value="1384.1882" alpha="255" label="1384" color="#dad0ca"/>
-              <item value="1412.4368" alpha="255" label="1412" color="#dad0ca"/>
-              <item value="1440.8901" alpha="255" label="1441" color="#dad0ca"/>
-              <item value="1469.3434" alpha="255" label="1469" color="#d9cfca"/>
-              <item value="1497.7967" alpha="255" label="1498" color="#d9cecb"/>
-              <item value="1526.25" alpha="255" label="1526" color="#d8cecb"/>
-              <item value="1554.7033" alpha="255" label="1555" color="#d7d0cc"/>
-              <item value="1583.1566" alpha="255" label="1583" color="#d8d1cd"/>
-              <item value="1611.6099" alpha="255" label="1612" color="#d7d2ce"/>
-              <item value="1640.0632" alpha="255" label="1640" color="#d8d2cf"/>
-              <item value="1668.3118" alpha="255" label="1668" color="#d9d3d2"/>
-              <item value="1696.7651" alpha="255" label="1697" color="#d9d5d3"/>
-              <item value="1725.2184" alpha="255" label="1725" color="#d8d7d5"/>
-              <item value="1753.6717" alpha="255" label="1754" color="#dad9d7"/>
-              <item value="1782.125" alpha="255" label="1782" color="#dbdad8"/>
-              <item value="1810.5783" alpha="255" label="1811" color="#dbdbdb"/>
-              <item value="1839.0316" alpha="255" label="1839" color="#dddcda"/>
-              <item value="1867.4849" alpha="255" label="1867" color="#dfdedc"/>
-              <item value="1895.9382" alpha="255" label="1896" color="#e1dfdf"/>
-              <item value="1924.1868" alpha="255" label="1924" color="#e2e0e0"/>
-              <item value="1952.6401" alpha="255" label="1953" color="#e3e2e2"/>
-              <item value="1981.0934" alpha="255" label="1981" color="#e4e3e3"/>
-              <item value="2009.5467" alpha="255" label="2010" color="#e5e5e5"/>
-              <item value="2038" alpha="255" label="2038" color="#e6e6e6"/>
-            </colorrampshader>
-          </rastershader>
         </rasterrenderer>
         <brightnesscontrast brightness="0" contrast="0"/>
-        <huesaturation saturation="100" colorizeGreen="128" grayscaleMode="0" colorizeBlue="128" colorizeStrength="100" colorizeOn="0" colorizeRed="255"/>
+        <huesaturation grayscaleMode="0" colorizeGreen="128" colorizeOn="0" colorizeBlue="128" colorizeStrength="100" saturation="100" colorizeRed="255"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer type="raster" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" autoRefreshTime="0" autoRefreshEnabled="0" maxScale="0" minScale="1e+08">
+    <maplayer autoRefreshEnabled="0" refreshOnNotifyEnabled="0" type="raster" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" styleCategories="AllStyleCategories" minScale="1e+08" refreshOnNotifyMessage="">
       <extent>
         <xmin>329262.30286242644069716</xmin>
         <ymin>4428219.51548734493553638</ymin>
@@ -305,7 +468,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxz="0" crs="" miny="0" maxx="0" minz="0" minx="0" maxy="0" dimensions="2"/>
+          <spatial minz="0" maxy="0" miny="0" maxx="0" dimensions="2" minx="0" crs="" maxz="0"/>
           <temporal>
             <period>
               <start></start>
@@ -330,13 +493,13 @@
         <Searchable>1</Searchable>
       </flags>
       <customproperties>
-        <property value="false" key="WMSBackgroundLayer"/>
-        <property value="false" key="WMSPublishDataSourceUrl"/>
-        <property value="0" key="embeddedWidgets/count"/>
-        <property value="Value" key="identify/format"/>
+        <property key="WMSBackgroundLayer" value="false"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
       </customproperties>
       <pipe>
-        <rasterrenderer type="multibandcolor" blueBand="3" alphaBand="4" redBand="1" greenBand="2" opacity="1">
+        <rasterrenderer redBand="1" blueBand="3" greenBand="2" type="multibandcolor" opacity="1" alphaBand="4">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>MinMax</limits>
@@ -348,12 +511,12 @@
           </minMaxOrigin>
         </rasterrenderer>
         <brightnesscontrast brightness="0" contrast="0"/>
-        <huesaturation saturation="0" colorizeGreen="128" grayscaleMode="0" colorizeBlue="128" colorizeStrength="100" colorizeOn="0" colorizeRed="255"/>
+        <huesaturation grayscaleMode="0" colorizeGreen="128" colorizeOn="0" colorizeBlue="128" colorizeStrength="100" saturation="0" colorizeRed="255"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>0</blendMode>
     </maplayer>
-    <maplayer type="raster" styleCategories="AllStyleCategories" refreshOnNotifyMessage="" hasScaleBasedVisibilityFlag="0" refreshOnNotifyEnabled="0" autoRefreshTime="0" autoRefreshEnabled="0" maxScale="0" minScale="1e+08">
+    <maplayer autoRefreshEnabled="0" refreshOnNotifyEnabled="0" type="raster" hasScaleBasedVisibilityFlag="0" maxScale="0" autoRefreshTime="0" styleCategories="AllStyleCategories" minScale="1e+08" refreshOnNotifyMessage="">
       <extent>
         <xmin>329262.30286243447335437</xmin>
         <ymin>4428219.51548748090863228</ymin>
@@ -410,7 +573,7 @@
           </spatialrefsys>
         </crs>
         <extent>
-          <spatial maxz="0" crs="" miny="0" maxx="0" minz="0" minx="0" maxy="0" dimensions="2"/>
+          <spatial minz="0" maxy="0" miny="0" maxx="0" dimensions="2" minx="0" crs="" maxz="0"/>
           <temporal>
             <period>
               <start></start>
@@ -432,13 +595,13 @@
         <Searchable>1</Searchable>
       </flags>
       <customproperties>
-        <property value="false" key="WMSBackgroundLayer"/>
-        <property value="false" key="WMSPublishDataSourceUrl"/>
-        <property value="0" key="embeddedWidgets/count"/>
-        <property value="Value" key="identify/format"/>
+        <property key="WMSBackgroundLayer" value="false"/>
+        <property key="WMSPublishDataSourceUrl" value="false"/>
+        <property key="embeddedWidgets/count" value="0"/>
+        <property key="identify/format" value="Value"/>
       </customproperties>
       <pipe>
-        <rasterrenderer type="singlebandgray" alphaBand="-1" opacity="1" gradient="BlackToWhite" grayBand="1">
+        <rasterrenderer gradient="BlackToWhite" type="singlebandgray" opacity="1" alphaBand="-1" grayBand="1">
           <rasterTransparency/>
           <minMaxOrigin>
             <limits>MinMax</limits>
@@ -455,7 +618,7 @@
           </contrastEnhancement>
         </rasterrenderer>
         <brightnesscontrast brightness="0" contrast="0"/>
-        <huesaturation saturation="0" colorizeGreen="128" grayscaleMode="0" colorizeBlue="128" colorizeStrength="100" colorizeOn="0" colorizeRed="255"/>
+        <huesaturation grayscaleMode="0" colorizeGreen="128" colorizeOn="0" colorizeBlue="128" colorizeStrength="100" saturation="1" colorizeRed="255"/>
         <rasterresampler maxOversampling="2"/>
       </pipe>
       <blendMode>8</blendMode>
@@ -465,115 +628,116 @@
     <layer id="final_render2_b4dd72c1_365d_4977_be56_d1397424b328"/>
     <layer id="my_image_09d532a5_b906_46f6_b983_8e850aae17ee"/>
     <layer id="dem_utm_c3f03fd1_ea95_4f7a_8a9a_c736a6983a5f"/>
+    <layer id="dem_utm_c92b5a35_951f_475d_b02c_5bcd7966dfeb"/>
   </layerorder>
   <properties>
-    <WMTSMinScale type="int">5000</WMTSMinScale>
-    <WMTSJpegLayers>
-      <Project type="bool">false</Project>
-      <Layer type="QStringList"/>
-      <Group type="QStringList"/>
-    </WMTSJpegLayers>
-    <WCSLayers type="QStringList"/>
-    <SpatialRefSys>
-      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
-    </SpatialRefSys>
-    <WMSContactPerson type="QString"></WMSContactPerson>
-    <Measure>
-      <Ellipsoid type="QString">WGS84</Ellipsoid>
-    </Measure>
-    <WMSContactPosition type="QString"></WMSContactPosition>
-    <WMSRootName type="QString"></WMSRootName>
-    <WMSKeywordList type="QStringList">
-      <value></value>
-    </WMSKeywordList>
-    <WMSServiceTitle type="QString"></WMSServiceTitle>
     <WMTSGrids>
       <CRS type="QStringList"/>
       <Config type="QStringList"/>
     </WMTSGrids>
-    <WMSUrl type="QString"></WMSUrl>
-    <WCSUrl type="QString"></WCSUrl>
+    <PositionPrecision>
+      <DecimalPlaces type="int">2</DecimalPlaces>
+      <Automatic type="bool">true</Automatic>
+      <DegreeFormat type="QString">MU</DegreeFormat>
+    </PositionPrecision>
+    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
+    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
+    <WMTSUrl type="QString"></WMTSUrl>
+    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
+    <WMSContactPerson type="QString"></WMSContactPerson>
+    <WMSContactPosition type="QString"></WMSContactPosition>
+    <Paths>
+      <Absolute type="bool">false</Absolute>
+    </Paths>
+    <Layouts>
+      <lastLayoutExportDir type="QString">D:/Desktop/oscal_2019/img/final_print.png</lastLayoutExportDir>
+    </Layouts>
+    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WFSLayers type="QStringList"/>
+    <WMSKeywordList type="QStringList">
+      <value></value>
+    </WMSKeywordList>
+    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
     <WMTSLayers>
+      <Group type="QStringList"/>
       <Project type="bool">false</Project>
       <Layer type="QStringList"/>
-      <Group type="QStringList"/>
     </WMTSLayers>
-    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
+    <DefaultStyles>
+      <Marker type="QString"></Marker>
+      <RandomColors type="bool">true</RandomColors>
+      <Fill type="QString"></Fill>
+      <Line type="QString"></Line>
+      <Opacity type="double">1</Opacity>
+      <ColorRamp type="QString"></ColorRamp>
+    </DefaultStyles>
+    <WMSImageQuality type="int">90</WMSImageQuality>
+    <Macros>
+      <pythonCode type="QString"></pythonCode>
+    </Macros>
+    <Legend>
+      <filterByMap type="bool">false</filterByMap>
+    </Legend>
     <Measurement>
       <DistanceUnits type="QString">meters</DistanceUnits>
       <AreaUnits type="QString">m2</AreaUnits>
     </Measurement>
-    <WMTSUrl type="QString"></WMTSUrl>
-    <Macros>
-      <pythonCode type="QString"></pythonCode>
-    </Macros>
-    <Paths>
-      <Absolute type="bool">false</Absolute>
-    </Paths>
-    <Gui>
-      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
-      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
-      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
-      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
-      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
-      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
-      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
-    </Gui>
-    <DefaultStyles>
-      <Line type="QString"></Line>
-      <RandomColors type="bool">true</RandomColors>
-      <Marker type="QString"></Marker>
-      <Opacity type="double">1</Opacity>
-      <Fill type="QString"></Fill>
-      <ColorRamp type="QString"></ColorRamp>
-    </DefaultStyles>
-    <WMSImageQuality type="int">90</WMSImageQuality>
-    <WFSLayers type="QStringList"/>
-    <PositionPrecision>
-      <DegreeFormat type="QString">MU</DegreeFormat>
-      <DecimalPlaces type="int">2</DecimalPlaces>
-      <Automatic type="bool">true</Automatic>
-    </PositionPrecision>
-    <Legend>
-      <filterByMap type="bool">false</filterByMap>
-    </Legend>
-    <WMSPrecision type="QString">8</WMSPrecision>
-    <WMSContactMail type="QString"></WMSContactMail>
-    <WMSUseLayerIDs type="bool">false</WMSUseLayerIDs>
-    <WMSFees type="QString">conditions unknown</WMSFees>
-    <PAL>
-      <TextFormat type="int">0</TextFormat>
-      <ShowingAllLabels type="bool">false</ShowingAllLabels>
-      <CandidatesPoint type="int">16</CandidatesPoint>
-      <DrawRectOnly type="bool">false</DrawRectOnly>
-      <CandidatesLine type="int">50</CandidatesLine>
-      <ShowingCandidates type="bool">false</ShowingCandidates>
-      <SearchMethod type="int">0</SearchMethod>
-      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
-      <CandidatesPolygon type="int">30</CandidatesPolygon>
-    </PAL>
-    <WMTSPngLayers>
-      <Project type="bool">false</Project>
-      <Layer type="QStringList"/>
-      <Group type="QStringList"/>
-    </WMTSPngLayers>
+    <WFSUrl type="QString"></WFSUrl>
     <WFSTLayers>
       <Delete type="QStringList"/>
       <Insert type="QStringList"/>
       <Update type="QStringList"/>
     </WFSTLayers>
-    <WFSUrl type="QString"></WFSUrl>
-    <WMSServiceAbstract type="QString"></WMSServiceAbstract>
-    <WMSMaxAtlasFeatures type="int">1</WMSMaxAtlasFeatures>
-    <WMSOnlineResource type="QString"></WMSOnlineResource>
+    <WCSUrl type="QString"></WCSUrl>
+    <WMSContactMail type="QString"></WMSContactMail>
     <WMSContactPhone type="QString"></WMSContactPhone>
-    <WMSContactOrganization type="QString"></WMSContactOrganization>
+    <WCSLayers type="QStringList"/>
+    <WMSSegmentizeFeatureInfoGeometry type="bool">false</WMSSegmentizeFeatureInfoGeometry>
     <WMSAddWktGeometry type="bool">false</WMSAddWktGeometry>
-    <Layouts>
-      <lastLayoutExportDir type="QString">D:/Desktop/oscal_2019/img/final_print.png</lastLayoutExportDir>
-    </Layouts>
-    <WMSServiceCapabilities type="bool">false</WMSServiceCapabilities>
+    <WMSRootName type="QString"></WMSRootName>
+    <WMSUrl type="QString"></WMSUrl>
+    <WMTSMinScale type="int">5000</WMTSMinScale>
+    <Measure>
+      <Ellipsoid type="QString">WGS84</Ellipsoid>
+    </Measure>
+    <WMSContactOrganization type="QString"></WMSContactOrganization>
     <WMSAccessConstraints type="QString">None</WMSAccessConstraints>
+    <WMTSJpegLayers>
+      <Group type="QStringList"/>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"/>
+    </WMTSJpegLayers>
+    <WMSPrecision type="QString">8</WMSPrecision>
+    <WMSServiceTitle type="QString"></WMSServiceTitle>
+    <WMSFees type="QString">conditions unknown</WMSFees>
+    <SpatialRefSys>
+      <ProjectionsEnabled type="int">1</ProjectionsEnabled>
+    </SpatialRefSys>
+    <Gui>
+      <CanvasColorRedPart type="int">255</CanvasColorRedPart>
+      <CanvasColorGreenPart type="int">255</CanvasColorGreenPart>
+      <SelectionColorRedPart type="int">255</SelectionColorRedPart>
+      <SelectionColorBluePart type="int">0</SelectionColorBluePart>
+      <SelectionColorGreenPart type="int">255</SelectionColorGreenPart>
+      <SelectionColorAlphaPart type="int">255</SelectionColorAlphaPart>
+      <CanvasColorBluePart type="int">255</CanvasColorBluePart>
+    </Gui>
+    <WMTSPngLayers>
+      <Group type="QStringList"/>
+      <Project type="bool">false</Project>
+      <Layer type="QStringList"/>
+    </WMTSPngLayers>
+    <PAL>
+      <DrawRectOnly type="bool">false</DrawRectOnly>
+      <CandidatesPolygon type="int">30</CandidatesPolygon>
+      <ShowingCandidates type="bool">false</ShowingCandidates>
+      <ShowingAllLabels type="bool">false</ShowingAllLabels>
+      <CandidatesPoint type="int">16</CandidatesPoint>
+      <ShowingPartialsLabels type="bool">true</ShowingPartialsLabels>
+      <TextFormat type="int">0</TextFormat>
+      <CandidatesLine type="int">50</CandidatesLine>
+      <SearchMethod type="int">0</SearchMethod>
+    </PAL>
   </properties>
   <visibility-presets/>
   <transformContext/>
@@ -599,23 +763,23 @@
   </projectMetadata>
   <Annotations/>
   <Layouts>
-    <Layout printResolution="300" units="mm" worldFileMap="{25d2c33f-598a-4ade-b3b8-0feb30f2587f}" name="final_print">
-      <Snapper snapToItems="1" snapToGrid="0" tolerance="5" snapToGuides="1"/>
-      <Grid offsetX="0" offsetY="0" offsetUnits="mm" resolution="10" resUnits="mm"/>
+    <Layout units="mm" printResolution="300" name="final_print" worldFileMap="{25d2c33f-598a-4ade-b3b8-0feb30f2587f}">
+      <Snapper snapToGrid="0" tolerance="5" snapToItems="1" snapToGuides="1"/>
+      <Grid offsetX="0" offsetY="0" resolution="10" resUnits="mm" offsetUnits="mm"/>
       <PageCollection>
-        <symbol type="fill" alpha="1" force_rhr="0" clip_to_extent="1" name="">
-          <layer pass="0" enabled="1" class="SimpleFill" locked="0">
-            <prop v="3x:0,0,0,0,0,0" k="border_width_map_unit_scale"/>
-            <prop v="255,255,255,255" k="color"/>
-            <prop v="miter" k="joinstyle"/>
-            <prop v="0,0" k="offset"/>
-            <prop v="3x:0,0,0,0,0,0" k="offset_map_unit_scale"/>
-            <prop v="MM" k="offset_unit"/>
-            <prop v="35,35,35,255" k="outline_color"/>
-            <prop v="no" k="outline_style"/>
-            <prop v="0.26" k="outline_width"/>
-            <prop v="MM" k="outline_width_unit"/>
-            <prop v="solid" k="style"/>
+        <symbol type="fill" alpha="1" clip_to_extent="1" name="" force_rhr="0">
+          <layer pass="0" locked="0" enabled="1" class="SimpleFill">
+            <prop k="border_width_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="color" v="255,255,255,255"/>
+            <prop k="joinstyle" v="miter"/>
+            <prop k="offset" v="0,0"/>
+            <prop k="offset_map_unit_scale" v="3x:0,0,0,0,0,0"/>
+            <prop k="offset_unit" v="MM"/>
+            <prop k="outline_color" v="35,35,35,255"/>
+            <prop k="outline_style" v="no"/>
+            <prop k="outline_width" v="0.26"/>
+            <prop k="outline_width_unit" v="MM"/>
+            <prop k="style" v="solid"/>
             <data_defined_properties>
               <Option type="Map">
                 <Option value="" type="QString" name="name"/>
@@ -625,9 +789,9 @@
             </data_defined_properties>
           </layer>
         </symbol>
-        <LayoutItem zValue="0" frame="false" type="65638" opacity="1" templateUuid="{80c3a228-57b6-4f27-9759-0adc391a1047}" blendMode="0" excludeFromExports="0" visibility="1" positionLock="false" position="0,0,mm" positionOnPage="0,0,mm" referencePoint="0" groupUuid="" background="true" outlineWidthM="0.3,mm" frameJoinStyle="miter" uuid="{80c3a228-57b6-4f27-9759-0adc391a1047}" size="210,297,mm" itemRotation="0" id="">
-          <FrameColor green="0" alpha="255" blue="0" red="0"/>
-          <BackgroundColor green="255" alpha="255" blue="255" red="255"/>
+        <LayoutItem referencePoint="0" excludeFromExports="0" itemRotation="0" zValue="0" blendMode="0" outlineWidthM="0.3,mm" background="true" uuid="{80c3a228-57b6-4f27-9759-0adc391a1047}" frame="false" visibility="1" positionLock="false" opacity="1" id="" type="65638" frameJoinStyle="miter" size="210,297,mm" groupUuid="" positionOnPage="0,0,mm" templateUuid="{80c3a228-57b6-4f27-9759-0adc391a1047}" position="0,0,mm">
+          <FrameColor red="0" green="0" alpha="255" blue="0"/>
+          <BackgroundColor red="255" green="255" alpha="255" blue="255"/>
           <LayoutObject>
             <dataDefinedProperties>
               <Option type="Map">
@@ -641,9 +805,9 @@
         </LayoutItem>
         <GuideCollection visible="1"/>
       </PageCollection>
-      <LayoutItem zValue="1" frame="false" labelMargin="0,mm" type="65639" drawCanvasItems="true" opacity="1" templateUuid="{25d2c33f-598a-4ade-b3b8-0feb30f2587f}" followPresetName="" blendMode="0" followPreset="false" excludeFromExports="0" keepLayerSet="false" mapFlags="0" visibility="1" mapRotation="0" positionLock="false" position="0,0,mm" positionOnPage="0,0,mm" referencePoint="0" groupUuid="" background="true" outlineWidthM="0.3,mm" frameJoinStyle="miter" uuid="{25d2c33f-598a-4ade-b3b8-0feb30f2587f}" size="210,297,mm" itemRotation="0" id="">
-        <FrameColor green="0" alpha="255" blue="0" red="0"/>
-        <BackgroundColor green="255" alpha="255" blue="255" red="255"/>
+      <LayoutItem followPresetName="" referencePoint="0" excludeFromExports="0" itemRotation="0" zValue="1" blendMode="0" outlineWidthM="0.3,mm" followPreset="false" background="true" keepLayerSet="false" uuid="{25d2c33f-598a-4ade-b3b8-0feb30f2587f}" frame="false" visibility="1" mapFlags="0" positionLock="false" opacity="1" id="" type="65639" frameJoinStyle="miter" size="210,297,mm" groupUuid="" drawCanvasItems="true" mapRotation="0" positionOnPage="0,0,mm" templateUuid="{25d2c33f-598a-4ade-b3b8-0feb30f2587f}" position="0,0,mm" labelMargin="0,mm">
+        <FrameColor red="0" green="0" alpha="255" blue="0"/>
+        <BackgroundColor red="255" green="255" alpha="255" blue="255"/>
         <LayoutObject>
           <dataDefinedProperties>
             <Option type="Map">
@@ -654,21 +818,21 @@
           </dataDefinedProperties>
           <customproperties/>
         </LayoutObject>
-        <Extent xmin="356406.34884951513959095" ymin="4427969.12038129940629005" xmax="413776.35363583656726405" ymax="4509106.69857909716665745"/>
+        <Extent xmax="413776.35363583656726405" ymin="4427969.12038129940629005" xmin="356406.34884951513959095" ymax="4509106.69857909716665745"/>
         <LayerSet/>
-        <AtlasMap atlasDriven="0" scalingMode="2" margin="0.10000000000000001"/>
+        <AtlasMap scalingMode="2" margin="0.10000000000000001" atlasDriven="0"/>
         <labelBlockingItems/>
       </LayoutItem>
       <customproperties>
-        <property value="png" key="atlasRasterFormat"/>
-        <property value="true" key="imageAntialias"/>
-        <property value="0" key="imageCropMarginBottom"/>
-        <property value="0" key="imageCropMarginLeft"/>
-        <property value="0" key="imageCropMarginRight"/>
-        <property value="0" key="imageCropMarginTop"/>
-        <property value="false" key="imageCropToContents"/>
+        <property key="atlasRasterFormat" value="png"/>
+        <property key="imageAntialias" value="true"/>
+        <property key="imageCropMarginBottom" value="0"/>
+        <property key="imageCropMarginLeft" value="0"/>
+        <property key="imageCropMarginRight" value="0"/>
+        <property key="imageCropMarginTop" value="0"/>
+        <property key="imageCropToContents" value="false"/>
       </customproperties>
-      <Atlas filterFeatures="0" coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber" pageNameExpression="" enabled="0" sortFeatures="0" hideCoverage="0"/>
+      <Atlas hideCoverage="0" sortFeatures="0" coverageLayer="" filenamePattern="'output_'||@atlas_featurenumber" enabled="0" pageNameExpression="" filterFeatures="0"/>
     </Layout>
   </Layouts>
 </qgis>
