@@ -88,8 +88,9 @@
   <div>Merge and/or Clip your dem/topo</div>
 
   <div>
-    <pre><code>$ <b>gdalinfo</b> [input file]</code></pre> <br>
+    <pre><code>$ <b>gdalsrsinfo</b> [input file]</code></pre> <br>    
     <pre><code>$ <b>gdalwarp</b> <em>-co "TFW=YES"</em> [input file] deleteme.tif</code></pre> <br>
+    <pre><code>$ <b>gdalinfo</b> [input file]</code></pre> <br>
     <pre><code>$ <b>gdalwarp</b> <em>-s_srs</em> [source cs] <em>-t_srs</em> [desired cs]  
       <em>-r bilinear</em> 
       [input file] [output file]</code></pre>
